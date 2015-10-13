@@ -1,0 +1,19 @@
+<md-content style="width: 100%; height: 100%;">
+    
+    <md-list>
+        
+        <md-list-item ng-repeat="notification in notify.listNotification">
+            
+            <div class="md-list-item-text" layout="column">
+                <h3>{{ notification.dataHora }}</h3>
+                <h4>{{ notification.mensagem }}</h4>
+            </div>
+            
+            <md-divider></md-divider>
+            
+        </md-list-item>
+    </md-list>
+    
+    <md-toolbar style="background-color: transparent;"></md-toolbar>
+    
+</md-content>
