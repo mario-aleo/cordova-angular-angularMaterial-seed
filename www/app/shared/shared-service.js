@@ -3,7 +3,7 @@
 angular.module("ngapp").service("shared", function(){
 
     this.info = {
-        title: "Seed-AngularJS-AngularMaterial-Cordova/Phonegap",
+        title: "cordova-angular-angularMaterial-seed",
         auth: "Mario Aleo"
     };
 });
