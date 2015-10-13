@@ -17,7 +17,7 @@ angular.module("ngapp").controller("MainController", function(shared, $state, $s
 
 
     ctrl.link = function(){
-        alert("");
+        alert("https://github.com/marioaleogolsat/cordova-angular-angularMaterial-seed");
     };
 
 
