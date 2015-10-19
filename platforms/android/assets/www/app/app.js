@@ -4,11 +4,11 @@ angular.module("ngapp", [ "ngTouch", "ui.router", "ngMdIcons", "ngMaterial", "ng
 
 .run(function($rootScope, $cordovaDevice){
     document.addEventListener("deviceready", function () {
-        $rootScope.$watch("window.StatusBar", function(newValue, oldValue) {
+        $rootScope.$watch("window.StatusBar", function() {
             StatusBar.overlaysWebView(false);
             StatusBar.backgroundColorByName("black");
             $rootScope.$apply();
-        }); 
+        });
     }, false);
-    
+
 });

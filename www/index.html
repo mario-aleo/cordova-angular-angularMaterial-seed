@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html ng-app="ngapp">
-    
+
     <head>
-        
+
         <meta charset="utf-8"/>
         <meta name="format-detection" content="telephone=no"/>
         <meta name="msapplication-tap-highlight" content="no"/>
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"/>
-        
+
         <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-        
-        <link rel="stylesheet" type="text/css" href="assets/css/angular-material.min.css">
-        
+
+        <link rel="stylesheet" type="text/css" href="assets/css/angular-material.css">
+
         <link rel="stylesheet" type="text/css" href="assets/css/angular-material-icons.css">
-        
+
+        <script type='application/javascript' src='/path/to/fastclick.js'></script>
+
+        <script type='application/javascript'>
+            if ('addEventListener' in document) {
+                document.addEventListener('DOMContentLoaded', function() {
+                    FastClick.attach(document.body);
+                }, false);
+            }
+        </script>
+
         <title>NgApp</title>
     </head>
-    
+
     <body style="position: fixed;" ng-cloak="">
 
-        
+
         <ui-view></ui-view>
 
 
@@ -32,7 +42,7 @@
 
         <!-- Angular Material -->
         <script type="text/javascript" src="assets/lib/angular-material-icons.min.js"></script>
-        <script type="text/javascript" src="assets/lib/angular-material.min.js"></script>
+        <script type="text/javascript" src="assets/lib/angular-material.js"></script>
 
         <!-- Cordova -->
         <script type="text/javascript" src="assets/lib/ng-cordova.min.js"></script>
