@@ -10,24 +10,14 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/angular-material.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/angular-material.min.css">
 
         <link rel="stylesheet" type="text/css" href="assets/css/angular-material-icons.css">
-
-        <script type='application/javascript' src='/path/to/fastclick.js'></script>
-
-        <script type='application/javascript'>
-            if ('addEventListener' in document) {
-                document.addEventListener('DOMContentLoaded', function() {
-                    FastClick.attach(document.body);
-                }, false);
-            }
-        </script>
 
         <title>NgApp</title>
     </head>
 
-    <body style="position: fixed;" ng-cloak="">
+    <body style="position: fixed;" ng-cloak>
 
 
         <ui-view></ui-view>
@@ -38,18 +28,15 @@
         <script type="text/javascript" src="assets/lib/angular-ui-router.min.js"></script>
         <script type="text/javascript" src="assets/lib/angular-aria.min.js"></script>
         <script type="text/javascript" src="assets/lib/angular-animate.min.js"></script>
-        <script type="text/javascript" src="assets/lib/angular-touch.min.js"></script>
+        <script type="text/javascript" src="assets/lib/ngTouch.js"></script>
 
         <!-- Angular Material -->
         <script type="text/javascript" src="assets/lib/angular-material-icons.min.js"></script>
-        <script type="text/javascript" src="assets/lib/angular-material.js"></script>
+        <script type="text/javascript" src="assets/lib/angular-material.min.js"></script>
 
         <!-- Cordova -->
         <script type="text/javascript" src="assets/lib/ng-cordova.min.js"></script>
         <script src="cordova.js"></script>
-
-        <!-- Cordova Plugin -->
-
 
         <!-- Modules -->
         <script type="text/javascript" src="app/app.js"></script>
