@@ -11,13 +11,21 @@ module.exports = [
         "clobbers": [
             "window.StatusBar"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.OrientationLock/www/orientationLock.js",
+        "id": "com.phonegap.plugins.OrientationLock.OrientationLock",
+        "clobbers": [
+            "OrientationLock"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.0.0",
-    "cordova-plugin-statusbar": "2.0.0-dev"
+    "cordova-plugin-statusbar": "2.0.0-dev",
+    "com.phonegap.plugins.OrientationLock": "0.1"
 }
 // BOTTOM OF METADATA
 });

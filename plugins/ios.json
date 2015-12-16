@@ -42,6 +42,9 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "com.phonegap.plugins.OrientationLock": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
     "dependent_plugins": {}
