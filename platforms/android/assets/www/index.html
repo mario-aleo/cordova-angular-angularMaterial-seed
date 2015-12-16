@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html ng-app="ngapp">
 
-    <head>
+  <head>
 
-        <meta charset="utf-8"/>
-        <meta name="format-detection" content="telephone=no"/>
-        <meta name="msapplication-tap-highlight" content="no"/>
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"/>
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"/>
 
-        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/angular-material.css">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/angular-material-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/angular-material-icons.css">
 
-        <title>NgApp</title>
-    </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700">
 
-    <body style="position: fixed;" ng-cloak>
+    <!-- AngularJs -->
+    <script type="text/javascript" src="assets/lib/angular.min.js"></script>
+    <script type="text/javascript" src="assets/lib/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="assets/lib/angular-aria.js"></script>
+    <script type="text/javascript" src="assets/lib/angular-animate.js"></script>
+    <!--script type="text/javascript" src="assets/lib/ngTouch.min.js"></script-->
+    <script type="text/javascript" src="assets/lib/ngStorage.min.js"></script>
 
+    <!-- Angular Material -->
+    <script type="text/javascript" src="assets/lib/angular-material-icons.js"></script>
+    <script type="text/javascript" src="assets/lib/angular-material.js"></script>
 
-        <ui-view></ui-view>
+    <!-- Cordova -->
+    <script type="text/javascript" src="assets/lib/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
 
+    <!-- Modules -->
+    <script type="text/javascript" src="app/app.js"></script>
 
-        <!-- AngularJs -->
-        <script type="text/javascript" src="assets/lib/angular.min.js"></script>
-        <script type="text/javascript" src="assets/lib/angular-ui-router.min.js"></script>
-        <script type="text/javascript" src="assets/lib/angular-aria.min.js"></script>
-        <script type="text/javascript" src="assets/lib/angular-animate.min.js"></script>
-        <script type="text/javascript" src="assets/lib/ngTouch.min.js"></script>
+    <!-- Routes -->
+    <script type="text/javascript" src="app/routes.js"></script>
 
-        <!-- Angular Material -->
-        <script type="text/javascript" src="assets/lib/angular-material-icons.min.js"></script>
-        <script type="text/javascript" src="assets/lib/angular-material.min.js"></script>
+    <!-- Services -->
+    <script type="text/javascript" src="app/shared/shared-service.js"></script>
 
-        <!-- Cordova -->
-        <script type="text/javascript" src="assets/lib/ng-cordova.min.js"></script>
-        <script src="cordova.js"></script>
+    <!-- Controllers -->
+    <script type="text/javascript" src="app/components/main/main-controller.js"></script>
 
-        <!-- Modules -->
-        <script type="text/javascript" src="app/app.js"></script>
+    <title>NgApp</title>
+  </head>
 
-        <!-- Routes -->
-        <script type="text/javascript" src="app/routes.js"></script>
+  <body style="position: fixed;" ng-cloak>
 
-        <!-- Services -->
-        <script type="text/javascript" src="app/shared/shared-service.js"></script>
+    <ui-view></ui-view>
 
-        <!-- Controllers -->
-        <script type="text/javascript" src="app/components/main/main-controller.js"></script>
-    </body>
+  </body>
 </html>

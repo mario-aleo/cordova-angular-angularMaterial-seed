@@ -7,7 +7,7 @@ angular.module("ngapp").config(["$stateProvider", "$urlRouterProvider", function
     $stateProvider.state("main", {
         url: "/main",
         templateUrl: "app/components/main/main.html",
-        title: "Seed",
+        title: "Cordova Angular-Material",
         controller: "MainController",
         controllerAs: "main"
     });
