@@ -1,14 +1,24 @@
 "use strict";
 
-angular.module("ngapp", [ "ngTouch", "ui.router", "ngMdIcons", "ngMaterial", "ngCordova" ])
+angular.module("ngapp", [ /*"ngTouch",*/ "ui.router", "ngMdIcons", "ngMaterial", "ngCordova", "ngStorage" ])
 
-.run(function($rootScope, $cordovaDevice){
-    document.addEventListener("deviceready", function () {
-        $rootScope.$watch("window.StatusBar", function(newValue, oldValue) {
-            StatusBar.overlaysWebView(false);
-            StatusBar.backgroundColorByName("black");
-            $rootScope.$apply();
-        }); 
-    }, false);
-    
+.run(function($rootScope, $cordovaDevice, $cordovaStatusbar){
+  document.addEventListener("deviceready", function () {
+    $cordovaStatusbar.overlaysWebView(false);
+    $cordovaStatusbar.styleHex('#E53935');
+    window.plugins.orientationLock.lock("portrait");
+  }, false);
+  /*document.addEventListener("backbutton", function (e) {
+      if($state.is('init')){
+        navigator.app.exitApp();
+      }  else{
+        e.preventDefault();
+      }
+    }, false);*/
+})
+
+.config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('red')
+    .accentPalette('blue');
 });

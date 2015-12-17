@@ -1,47 +1,45 @@
-<md-content layout="column" layout-align="space-around center" style="width: 100%; height: 100%;">
-    <md-toolbar>
-        <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
- 
-            <md-button class="md-icon-button md-primary" ng-click="main.back()" aria-label="Back">
-                <ng-md-icon icon="chevron_left"></ng-md-icon>    
-            </md-button>
-            
-            <p>{{ main.title }}</p>
-            
-            <md-button class="md-icon-button md-primary" aria-label="Menu" ng-click="main.toggle()">
-                <ng-md-icon icon="menu"></ng-md-icon>
-            </md-button>
-            
-        </div>
-    </md-toolbar>
-
-    
-    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
-        <md-toolbar>
-            <h1 class="md-toolbar-tools">Menu</h1>
-        </md-toolbar>
-        <md-content layout="column" layout-align="space-around start">
-            <p style="margin-left: 1em;">Seed by: <br/> {{ main.auth }}</p>
-            <md-button ng-click="main.close()" class="md-primary">
-                <p>Fechar</p>
-            </md-button>
-        </md-content>
-    </md-sidenav>
-
-
-    <md-whiteframe class="md-whiteframe-z4" layout="column" layout-align="center center" style="width: 95%; height: 65%;">
-
-        
-
-    </md-whiteframe>
-    
-    
-    <md-button class="md-raised" style="width: 95%;" ng-click="main.link()">
-        <p>Project</p>
+<md-toolbar flex>
+  <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+    <md-button class="md-icon-button md-primary" aria-label="Menu" ng-click="main.toggle()">
+      <ng-md-icon icon="menu"></ng-md-icon>
     </md-button>
+    <p>{{ main.title }}</p>
+    <div style="width: 40px; height: 40px;"></div>
+  </div>
+</md-toolbar>
 
-    
-    <md-button class="md-raised" style="width: 95%;" ng-click="main.seed()">
-        <p>Seed Type</p>
-    </md-button>
-</md-content>
+<md-sidenav class="md-sidenav-left" md-component-id="left">
+  <md-toolbar>
+    <h1 class="md-toolbar-tools">SideNav Menu</h1>
+  </md-toolbar>
+  <md-list ng-cloak>
+    <md-list-item ng-href="http://www.google.com/design/spec/material-design/introduction.html">
+      <ng-md-icon icon="school"></ng-md-icon>
+      <p>Material Design</p>
+    </md-list-item>
+    <md-list-item ng-href="https://material.angularjs.org/latest/">
+      <ng-md-icon icon="settings_ethernet"></ng-md-icon>
+      <p>Angular Material</p>
+    </md-list-item>
+  </md-list>
+</md-sidenav>
+
+<div layout="column" layout-align="center center" flex>
+  <md-whiteframe class="md-whiteframe-3dp" layout="column" style="margin: 1em; width: 22em; height: 15em;" flex>
+    <div layout="column" flex style="margin-left: 1em;">
+      <h4>Project:</h4>
+      <p style="margin-top: -1em;">Cordova-Angular-AngularMaterial-Seed</p>
+      <h4>Created by:</h4>
+      <p style="margin-top: -1em;">MarioAleo</p>
+    </div>
+    <md-divider></md-divider>
+    <div layout="row" layout-align="space-around center" flex="20">
+      <md-button class="md-icon-button" aria-label="Project" ng-href="https://github.com/marioaleogolsat/cordova-angular-angularMaterial-seed">
+        <ng-md-icon icon="github-circle"></ng-md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="Creator" ng-href="https://github.com/marioaleogolsat">
+        <ng-md-icon icon="favorite"></ng-md-icon>
+      </md-button>
+    </div>
+  </md-whiteframe>
+</div>
