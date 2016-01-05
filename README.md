@@ -21,7 +21,7 @@
 <br/>
 
 * <p>There are places in the index.html to load your javascript files on the
-bottom of the file, please use it as a guide.</p>
+top of the file, please use it as a guide. (Since it's an app, the files should be load at the start, so the first paint will be complete)</p>
 
 <br/>
 
