@@ -5,8 +5,11 @@
 
 <br/>
 
-<p>Just clone it to you're computer and use it to initialize your projects.
-<br/>The directory structure is based on this topic:</p>
+<p>Just clone it to you're computer and use it to initialize your projects.<p>
+
+<br/>
+
+* <p>The directory structure is based on this topic:</p>
   https://scotch.io/tutorials/angularjs-best-practices-directory-structure
 
 <br/>
