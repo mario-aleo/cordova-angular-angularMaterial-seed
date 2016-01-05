@@ -5,7 +5,7 @@
 
 <br/>
 
-<p>Just clone it to you're computer and use it to initialize your projects.<p>
+<p>Just clone it to you're computer and use it to initialize your projects.</p>
 
 <br/>
 
