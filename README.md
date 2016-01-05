@@ -49,7 +49,7 @@ work properly. There're few examples in the app.js</p>
 
 <br/>
 
-* <p>Keep in mind that information and knowledg always get better when it's shared with anyone, feel free to use this seed, but still I'll be glad with you metion this repository on your code or repository or share it with your friends. Also, if you do something, I would be glad to recive an link showing your repository or work.</p>
+* <p>Keep in mind that information and knowledg always get better when it's shared with anyone, feel free to use this seed, but still I'll be glad with you mention this repository on your code or repository or share it with your friends. Also, if you do something, I would be glad to recive an link showing your repository or work.</p>
   
 <br/>
 <br/>
