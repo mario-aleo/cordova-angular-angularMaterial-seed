@@ -48,6 +48,13 @@ work properly. There're few examples in the app.js</p>
 
 <br/>
 
+* <p>When you want to debug on Android device, connect the device on your coputer via usb and use:</p>
+  "cordova run android --device"
+  <p>Also use Dev Chrome Tools:</p>
+  chrome://inspect/#devices  
+
+<br/>
+
 * <p>This is my favorite son, I'll always keep looking at him, so any thing you want to share with me or any questions you can ask me and/or open an issue, just make a good title so anyone can know what it's about.</p>
 
 <br/>
