@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("ngapp", [ /*"ngTouch",*/ "ui.router", "ngMdIcons", "ngMaterial", "ngCordova", "ngStorage" ])
+angular.module("ngapp", [ "ngTouch", "ui.router", "ngMdIcons", "ngMaterial", "ngCordova", "ngStorage" ])
 // ngTouch is No Longer Supported by Angular-Material
 
 .run(function($rootScope, $cordovaDevice, $cordovaStatusbar){
