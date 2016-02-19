@@ -65,4 +65,4 @@ work properly. There're few examples in the app.js</p>
 <br/>
   
 <h3>I'm pretty sure that:</h3>
-<img src="http://junkee.com/wp-content/uploads/2013/08/thats-all-folks-7172-1280x800.jpg" />
+<div style="margin: auto;"><img src="http://junkee.com/wp-content/uploads/2013/08/thats-all-folks-7172-1280x800.jpg" /></div>
