@@ -1,56 +1,146 @@
 <!DOCTYPE html>
-<html ng-app="ngapp">
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>NgApp</title>
+    </head>
 
-  <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="Content-Security-Policy">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <body>
+        <style>
+            body {
+                height: 100vh;
+                width: 100vw;
+                overflow-x: hidden;
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #navBar {
+                width: 100vw;
+                height: 60px;
+                background-color: darkgray;
+                margin-top: -20px;
+            }
+            
+            #content{
+                height: @calc(100vh - 60px);
+                width: 90vw;
+                padding: 5vw;
+            }
+            
+            #subContent {
+                padding-left: 1em;
+            }
+        </style>
+        
+        <div id="navBar">
+            <h2>Aula 2</h2>
+        </div>
+        
+        <div id="content">
+            <h4>Domínios:</h4>
+            <div id="subContent">
+                <p>.COM - Domínio Comercial (Genérico)<br/>
+                .EDU - Domínio Educacional<br/>
+                .GOV - Domínio Governamental<br/>
+                .MIL - Domínio Militar<br/>
+                .ORG - Domínio de Organizações Sem Fins Lucrativos<br/>
+                .NET - Domínio Network (Genérico)</p>
+            </div>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+            <br/>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/angular-material.css">
+            <h4>1 - O que são protocolos de comunicação de rede?</h4>
+            <div id="subContent">
+                <p>R:  São convenções que definem e controlam as conexões, comunicações e transferencias de dados entre computadores.</p>
+            </div>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/angular-material-icons.css">
+            <br/>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700">
+            <h4>2 - Quais são os tipos de redes mais conhecidos atualmente?</h4>
+            <div id="subContent">
+                <p>R:  Intranet, internet e localhost.</p>
+            </div>
 
-    <!-- AngularJs -->
-    <script type="text/javascript" src="assets/lib/angular.min.js"></script>
-    <script type="text/javascript" src="assets/lib/angular-ui-router.min.js"></script>
-    <script type="text/javascript" src="assets/lib/angular-aria.min.js"></script>
-    <script type="text/javascript" src="assets/lib/angular-animate.min.js"></script>
-    <script type="text/javascript" src="assets/lib/ngStorage.min.js"></script>
-    <script type="text/javascript" src="assets/lib/ngTouch.min.js"></script>
+            <br/>
 
-    <!-- Angular Material -->
-    <script type="text/javascript" src="assets/lib/angular-material-icons.js"></script>
-    <script type="text/javascript" src="assets/lib/angular-material.js"></script>
+            <h4>3 - Qual é o protocolo de rede utilizado pela internet para transmissão de arquivos?</h4>
+            <div id="subContent">
+                <p>R:  FTP.</p>
+            </div>
 
-    <!-- Cordova -->
-    <script type="text/javascript" src="assets/lib/ng-cordova.min.js"></script>
-    <script src="cordova.js"></script>
+            <br/>
 
-    <!-- Modules -->
-    <script type="text/javascript" src="app/app.js"></script>
+            <h4>4 - Em quantas camadas está organizada a estrutura do protocolo TCP/IP e quais são?</h4>
+            <div id="subContent">
+                <p>R:  São 4 camadas: Aplicação, Transporte, Internet, Rede.</p>
+            </div>
 
-    <!-- Routes -->
-    <script type="text/javascript" src="app/routes.js"></script>
+            <br/>
 
-    <!-- Services -->
-    <script type="text/javascript" src="app/shared/shared-service.js"></script>
+            <h4>5 - Defina os termos Site e Home Page?</h4>
+            <div id="subContent">
+                <p>R:  Home Page, também conhecida como Index, é a pagina inicial de um site, seja ela uma tela de login ou a tela de principais informações.<br/>
+                Site, um conjuto de paginas WEB que formam um conjuto de informações reunidas.</p>
+            </div>
 
-    <!-- Controllers -->
-    <script type="text/javascript" src="app/components/main/main-controller.js"></script>
+            <br/>
 
-    <title>NgApp</title>
-  </head>
-
-  <body style="position: fixed;" ng-cloak>
-
-    <ui-view></ui-view>
-
-  </body>
+            <h4>6 - Acesse o seguinte endereço:</h4>
+            <div id="subContent">
+                <p>http://archive.org/web/web.php</p>
+            </div>
+            
+            <br/>
+            
+            <h4>7 - Tags HTML</h4>
+            <div id="subContent">
+                <p>
+                    <b>Bold</b>
+                </p>
+                <p>
+                    <big>Big</big>
+                </p>
+                <p>
+                    <em>Almost Italic</em>
+                </p>
+                <p>
+                    <i>Italic</i>
+                </p>
+                <p>
+                    <small>Small</small>
+                </p>
+                <p>
+                    <strong>Strong</strong>
+                </p>
+                <p>
+                    <sub>Sub</sub>
+                </p>
+                <p>
+                    <sup>Sup</sup>
+                </p>
+                <p>
+                    <ins>Ins</ins>
+                </p>
+                <p>
+                    <del>Del</del>
+                </p>
+                <p>
+                    <tt>TT</tt>
+                </p>
+                <pre>
+                    This            Is          My          Text.
+                    And             It's        Inside      A           Pre            HTML            Tag.
+                </pre>
+                <p>
+                    This            Is          My          Text.
+                    And             It's        Outside      A           Pre            HTML            Tag.
+                </p>
+                <p align="left">Align-Left</p>
+                <p align="center">Align-Center</p>
+                <p align="right">Align-Right</p>
+            </div>
+        </div>
+    </body>
 </html>
