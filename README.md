@@ -48,6 +48,11 @@ work properly. There're few examples in the app.js</p>
 
 <br/>
 
+* <p>When you want to debug on Google Chrome, use Brackets, Node Server or even ISS Express.</p>
+  <p>Unfortunately, the cordova server isn't supporting the application, but I'm looking for a solution.</p>
+
+<br/>
+
 * <p>When you want to debug on Android device, connect the device on your computer via usb and use:</p>
   "cordova run android --device"
   <p>Also use Dev Chrome Tools:</p>
