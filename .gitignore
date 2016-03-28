@@ -1,5 +1,5 @@
-plugins/
-plugins\/
+plugins/*
+plugins\/*
 
-platforms/
-platforms\/
+platforms/*
+platforms\/*
