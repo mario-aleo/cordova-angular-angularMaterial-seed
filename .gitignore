@@ -3,3 +3,4 @@ plugins\/*
 
 platforms/*
 platforms\/*
+.DS_Store
