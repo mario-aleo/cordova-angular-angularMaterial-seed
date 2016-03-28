@@ -1,24 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.MaterialSeed" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Hello Cordova</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
     <preference name="loglevel" value="DEBUG" />
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
     <feature name="StatusBar">
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="OrientationLock">
-        <param name="android-package" value="com.plugin.phonegap.OrientationLock" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
     <name>MaterialSeed</name>
     <description>
         Cordova-AngularJS-angularMaterial Seed.
     </description>
-    <author email="" href="https://github.com/marioaleogolsat">
-        MarioAleo   GolSat
+    <author email="" href="https://github.com/mario-aleo">
+        MarioAleo
     </author>
     <content src="index.html" />
     <access origin="*" />

@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-statusbar.statusbar", function(require, exports, module) { /*
+cordova.define("cordova-plugin-statusbar.statusbar", function(require, exports, module) {
+/*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -18,6 +19,8 @@ cordova.define("cordova-plugin-statusbar.statusbar", function(require, exports, 
  * under the License.
  *
 */
+
+/* global cordova */
 
 var exec = require('cordova/exec');
 
@@ -95,16 +98,18 @@ var StatusBar = {
 
 };
 
-// prime it
-exec(function (res) {
-    if (typeof res == 'object') {
-        if (res.type == 'tap') {
-            cordova.fireWindowEvent('statusTap');
+// prime it. setTimeout so that proxy gets time to init
+window.setTimeout(function () {
+    exec(function (res) {
+        if (typeof res == 'object') {
+            if (res.type == 'tap') {
+                cordova.fireWindowEvent('statusTap');
+            }
+        } else {
+            StatusBar.isVisible = res;
         }
-    } else {
-        StatusBar.isVisible = res;
-    }
-}, null, "StatusBar", "_ready", []);
+    }, null, "StatusBar", "_ready", []);
+}, 0);
 
 module.exports = StatusBar;
 

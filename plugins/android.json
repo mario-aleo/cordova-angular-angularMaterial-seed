@@ -4,40 +4,16 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"OrientationLock\"><param name=\"android-package\" value=\"com.plugin.phonegap.OrientationLock\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "AndroidManifest.xml": {
-                "parents": {
-                    "/*": []
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.cordova.MaterialSeed"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "io.cordova.MaterialSeed"
         },
-        "com.phonegap.plugins.OrientationLock": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.MaterialSeed"
         }
     },

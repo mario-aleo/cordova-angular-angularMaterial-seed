@@ -4,47 +4,17 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "framework": {
-                "parents": {
-                    "CoreLocation.framework": [],
-                    "AudioToolbox.framework": []
-                }
-            },
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "*-Info.plist": {
-                "parents": {
-                    "NSLocationWhenInUseUsageDescription": []
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.cordova.MaterialSeed"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "io.cordova.MaterialSeed"
         },
-        "com.phonegap.plugins.OrientationLock": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.MaterialSeed"
         }
     },
     "dependent_plugins": {}
