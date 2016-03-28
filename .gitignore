@@ -1,6 +1,7 @@
+*.DS_Store
+
 plugins/*
 plugins\/*
 
 platforms/*
 platforms\/*
-.DS_Store
