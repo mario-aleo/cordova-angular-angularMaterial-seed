@@ -1,7 +1,7 @@
 <md-toolbar flex>
   <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
-    <md-button class="md-icon-button md-primary" aria-label="Menu" ng-click="main.toggle()">
-      <ng-md-icon icon="menu"></ng-md-icon>
+    <md-button class="md-icon-button" aria-label="Menu" ng-click="main.toggle()">
+      <md-icon>menu</md-icon>
     </md-button>
     <p>{{ main.title }}</p>
     <div style="width: 40px; height: 40px;"></div>
@@ -14,11 +14,11 @@
   </md-toolbar>
   <md-list ng-cloak>
     <md-list-item ng-href="http://www.google.com/design/spec/material-design/introduction.html">
-      <ng-md-icon icon="school"></ng-md-icon>
+      <md-icon style="padding-right: 16px; color: #000000">school</md-icon>
       <p>Material Design</p>
     </md-list-item>
     <md-list-item ng-href="https://material.angularjs.org/latest/">
-      <ng-md-icon icon="settings_ethernet"></ng-md-icon>
+      <md-icon style="padding-right: 16px; color: #000000">settings_ethernet</md-icon>
       <p>Angular Material</p>
     </md-list-item>
   </md-list>
@@ -35,11 +35,15 @@
     <md-divider></md-divider>
     <div layout="row" layout-align="space-around center" flex="20">
       <md-button class="md-icon-button" aria-label="Project" ng-href="https://github.com/mario-aleo/cordova-angular-angularMaterial-seed">
-        <ng-md-icon icon="github-circle"></ng-md-icon>
+        <md-icon style="color: #000000">book</md-icon>
       </md-button>
       <md-button class="md-icon-button" aria-label="Creator" ng-href="https://github.com/mario-aleo">
-        <ng-md-icon icon="favorite"></ng-md-icon>
+        <md-icon style="color: #000000">favorite</md-icon>
       </md-button>
     </div>
   </md-whiteframe>
+
+  <md-button class="md-fab md-primary" aria-label="Menu">
+    <md-icon>menu</md-icon>
+  </md-button>
 </div>

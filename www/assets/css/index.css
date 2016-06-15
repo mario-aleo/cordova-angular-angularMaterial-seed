@@ -78,3 +78,7 @@ body {
 .my-datepicker .form-control {
     width: 1px;
 }
+
+* .md-focused {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
