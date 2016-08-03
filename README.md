@@ -3,7 +3,7 @@
 A seed for projects using Cordova + AngularJS + Angular-Material
 (Note: this isn't an Ionic Framework Seed)
 
-Just clone it to your computer and use it to initialize your projects.
+Just clone it to your computer, run the command `cordova serve`, and use it to initialize your projects.
 
 * The directory structure is based on this topic:
 
